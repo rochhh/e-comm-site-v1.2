@@ -1,1 +1,49 @@
-<router-outlet></router-outlet>
+<div class="page-wrapper">
+
+    <!-- MENU SIDEBAR-->
+    <aside class="menu-sidebar d-none d-lg-block">
+      <div class="logo">
+        <a routerLink="/" >
+          <img class="img-x" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAC5CAMAAAA4cvuLAAAAh1BMVEX39/cAAAD////6+vr8/PxISEiysrLLy8vz8/Pt7e3y8vLs7Ozl5eUdHR2/v7/p6enc3NwYGBjU1NS5ubmAgICgoKB4eHjJycmBgYEpKSlZWVkvLy9AQECkpKRGRkYlJSWQkJBjY2NQUFA3NzcRERFVVVVycnKWlpaurq5oaGgTExM6OjqSkpL46s6mAAAIf0lEQVR4nO2d6XqqMBCGZTJVcRdr3Ze21mp77v/6DsmABAQXiJWEvD99HpB8TCaTySTUahaLxWKxWCwWi8ViUQECsGc/Q6nA0cexYyWJYB3HcV7g2Y9RItjEV2SIz36MEsEaviJdq0iEVSSJVSSJVSSJVSSJVSSJVSSJVSSJVSSJUMTGrDF2jjO18xoJ1hpNrCBx0PaZCgLwsNeuZ8KNvW62j3ENrDWd9vWTBLfOg4YP1tw4zuwBN34wMPcVcV7VS8JaXX5n/bKyyIOuB1gJc2f8vgvFt/0LoPcISQJBuhr6kcdIwtwFCaJn9HKrJIwhwa69+MBChpoKcpLkkntFAOh7k/p4PF6NGgMexGTLwlobfr9dW1dBTpKs0lvAEJq97YcjMzyOvczQDma6CxJK8pZmJAj91YuTyr5XSwtK2UBoprUggSSN8+Yh683T5SBeBymGgj/6OtUI8MbeWRuQrTZy+xfrD5/lTP5t3jizE9bfv2kvCPcWyYYhHoZhu3fv40nf5f7Vp+Z2RpJfmQ+SvY3pOcW7BnjLoMmzrVcDlBXznS20evtT36npbxFXYTANmntsYPobR6jVPwMTMj+zBp1F8Pr7lzoAQiMwpKmR/SQiCFCc9861hiL0yNksXZN7DnyLRnZ7t7x4rFH/Gg7MlQReyYE0b2wiNMhMGqY6E6AxZHW7Z8DWl8mSwNv9rWPBRUZ2HNjmaltwmZYZostAPefLhrFwxo94pqeCYt7qnE9xrkMh3dw4VyJmcb1czYIjv3ZsliTkIL9zNoqJmH5gkiuhpYqPvG9ZFIk7S5PGGxSTGTf3S4YDv/5gjiSwEg0q4AhAZE2a6h7pyTSF0RfxjNRvHrSy/vegiCi8Qo6RhmBTjATF/L/Y+2VukcGqZGC9uImE0bwZAzCsi4y8IawvQjwThhtyiqPCTRGRa8G+Vw6EX90puM9ExDTFb/R0RKdJXee8E7ZTYmvPx1XV/8XcaK9/tyFjb6m4E8/jb/S3EeTpdyVbeVmba6tfRV4SUbOoJvyGjRHjLyyU+UPhSMbaK+KqS/aIDqi9a6X4rK3kXsK1Fg5+/4yw3lDUHEo/i4yzmlaInVq/cq+R/rN0nQm8Q/2EtARB+80UKcLV3Ug/YC/6z3qrXIMQBmv+AZHfEOHIpyJFOvHQ5lSJIijZ3gHYxxTZnoxEpAIKpc8kWnFFRFif9hrKAH7HHq5+UkT0GkWKJG0E48WfZYvdpuuXkPU24Ue6Cv2ItNzJOu/Rn76Ubg4IEtKz0XtVONZ8yjfP+NNSQ6kvNRljzeKRLJo/amPWo/aKAK85nKiZ1+yNmNeI6dm3GkW6Rsx9ka9wKin+IJekf7ERTWxU3AlH/o0W2ptIEFmm7Ce5G7E8YcIBFMIfqmiIWE9X46OfizD2oaL7KOl+z0fN8gTwWYyKdZ/nI7pN4Ww887iwRdfTywG1pVHQSOCdJ9CMMJEgbC04HyFZSze/zQkl2Ip5ElGIpig7WQKA16MWWp8kUeuGmEi49lukZEqEeQtjTMQ3kq9iaT/KMZsQnYXQ5Gad9x2jcKtG1BedoLq6vMX+bFPGzHJBUBT759lMEm7vWxllIuH+mlynD9E4o39+NQnVxudY2adEkWl9hiPC8BzbBVBsDh8ZZyKcH7EWee/OReFEzJjzJgm26jXvMn/a8PhpUCQiA6O7XSSKJUED0s0ZUOh5V5le17RgNQF+3eclyRsbtoszxp2nRNLmZ/3XNS9B3vVGR0nTGR3PlLwHGjtuGkxZc2doaBY/64r2Qt+SHiQnEk+9XT15UQNYrdeJNYrmfO2rTaM9vvGlL/TyzRXLBLZniTw8VR1djUpoOhOrXhX29YBTgf8UbG/OUkXBBu8rLaM9z7FSHNJSb0mYu0nJftER0Je33NAG0ERORFRvaj3HYa44mWmXODCA3vWVxICTshBIS78aS8JcMXx2z+qz4eomccpCnpWvgd6SoCsC1E3KkRLIO9OFwiNyqyklFlpLwoRTdTZpB8yS+WcbCSVF0jxNIImW7tXNFiRY5cswEga1UfYEL5Bkql9cQpXyGYLwoeTjkLabmQE06GS9rLLgQBL9gnvkUccw+1iatFOLawid7/Bw38w0Ckmi4eZwdnQ+L5zTk+JuoXUIz7L158fZl/IDPLVcFIfUA70zYMB67yc5nOXFFiNqsy8gJwzQe43kcN4801t8EYYw+F5EcryPmoYf23sZhPZB2ko1r7vVNo+48/iquBy+ecjO43PVrrYcPv9Ox+g7u+3g0jdJqgFGn53YT84+FWBCPvVeWOhL/aEl0VsY4mBSPUlEAnq56p85Dz+SH//qOuEvAvPmKc4DoVmn478V7YjVifPvjPi/TKLd9tVTJAEPXaWTEYYqdm3pDEJ/LEXyU6/SgbxwHtInoN57rNJ6+K2XnIfzcqh2JM+dxzb6Itbiu1NpOYTz+JSdR8Y3j6oC1MLIg3OsuPPwgX+RHOvDWSRfPWjfHWeW5jzKd5jXwwkOx9q9eudpAAa13uEpT/VchjzyOE/XM8AGL8wya3/RLbBWLyVp5o/G/2aVndekyOEe1if3UkFF4vgT31gWWr91XaX4csSz0G6lgxPG17+jD9kOq56F5s5DWsLaZ32+tCLwyENyHilZ6ErBncdbJEdaFrpaSMUzdgmLA1JveWuY+bXru6DjJkTkMUqpvKlg9wlmer9pzsMfflamfN/pDtjS2aQ5D4SmP/xofyp8LjqpE9+JGH6M3c56kTM5ELwpVVCYdo5EHphcyvplBUFor6JS1s19G+nNI7Gk5/xU04mE8JnN0ZFZtioYjITwnOpr/MMAzrSKBVcBLLbCGfhUr8pOtb9OyOHsK14k4dvIah8Wjezm20nl1zlFEAJQcwd9V6fPJPwBFfalFovFYrFYLBaLRQH/AQoYVP0e/QywAAAAAElFTkSuQmCC" alt="">
+          <!-- <img src="assets/images/logo.png" alt="luv2shop" class="img-responsive"> -->
+        </a>
+      </div>
+  
+      <app-product-category-menu></app-product-category-menu>
+  
+    </aside>
+    <!-- END MENU SIDEBAR-->
+  
+    <div class="page-container">
+      <!-- HEADER DESKTOP-->
+      <header class="header-desktop">
+        <div class="section-content section-content-p30">
+          <div class="container-fluid">
+            <div class="header-wrap">
+  
+              <app-search></app-search>
+
+              <app-cart-status></app-cart-status>
+              
+            </div>
+            <div class="account-wrap"></div>
+          </div>
+        </div>
+      </header>
+      <!-- END HEADER DESKTOP-->
+  
+      <!-- MAIN CONTENT-->
+      <router-outlet></router-outlet>
+  
+    </div>
+  </div>
+  
+  <!-- ENDS PAGE CONTAINER -->
+  
+  <footer>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </footer>
