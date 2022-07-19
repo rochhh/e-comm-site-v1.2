@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-project-5';
+  // constructor( public afAuth : AngularFireAuth ) { }
+
+  // logout() : void{
+  //   this.afAuth.signOut();
+  // }
+
 }

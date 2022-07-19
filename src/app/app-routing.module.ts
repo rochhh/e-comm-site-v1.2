@@ -6,6 +6,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 
+
 const routes: Routes = [
   { path: 'checkout' , component : CheckoutComponent },
   { path: 'cart-details' , component : CartDetailsComponent },
@@ -14,9 +15,11 @@ const routes: Routes = [
   { path: 'category/:id' , component : ProductListComponent  },
   { path: 'category' , component : ProductListComponent  },
   { path: 'products' , component : ProductListComponent },
+  // { path : 'login' , component : LoginSignupComponent },
+  // { path : 'signup' , component : SignupComponent },
   { path: '' , redirectTo: '/products' , pathMatch:'full'  },
   { path: '**' , component: PagenotfoundComponent  },
-
+// DashboardComponent , canActivate : [AuthGuard]
 ];
 
 @NgModule({ 
